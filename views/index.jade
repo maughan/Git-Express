@@ -5,6 +5,6 @@ block content
   each repo, key in collection
     ul
       li
-        a(href=repo.html_url) #{repo.name}
+        a(href='./repos/#{repo.name}') #{repo.name}
         p Owner: #{repo.owner.login} / Watchers: #{repo.watchers} / Updated at: #{repo.updated_at}
     
